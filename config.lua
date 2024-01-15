@@ -96,7 +96,7 @@ Config.TrunkSpace = {
     },
     [12] = { -- Vans
         slots = 35,
-        maxWeight = 120000
+        maxWeight = 250000
     },
     [13] = { -- Cycles
         slots = 0,
@@ -104,7 +104,7 @@ Config.TrunkSpace = {
     },
     [14] = { -- Boats
         slots = 50,
-        maxWeight = 120000
+        maxWeight = 250000
     },
     [15] = { -- Helicopters
         slots = 50,
@@ -112,7 +112,7 @@ Config.TrunkSpace = {
     },
     [16] = { -- Planes
         slots = 50,
-        maxWeight = 120000
+        maxWeight = 250000
     },
 }
 
