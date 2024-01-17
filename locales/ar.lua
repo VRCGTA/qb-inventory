@@ -52,9 +52,10 @@ local Translations = {
     },
 }
 
-if GetConvar('qb_locale', 'en') == 'ar' then
-  Lang = Lang or Locale:new({
-      phrases = Translations,
-      warnOnMissing = true
-  })
-end
+Locale:registerLocale(false, 'ar', function()
+    Lang = Locale:new({
+        phrases = Translations,
+        warnOnMissing = true,
+        fallbackLang = Lang,
+    })
+end)
