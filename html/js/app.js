@@ -362,6 +362,15 @@ function generateDescription(itemData) {
             <p><strong>CSN: </strong><span>${itemData.info.citizenid}</span></p>`;
         case "harness":
             return `<p>${itemData.info.uses} uses left</p>`;
+        case "syphoningkit":
+            // cdn-fuel
+            return `<p>${itemData.label}</p>
+            <p>A kit used to syphon gasoline from vehicles! <br><br>${itemData.info.gasamount} Liters Inside.</p>
+            </span></p><p style=\"padding-top: .8vh;font-size:11px\"><b>Weight: </b>${((itemData.weight * itemData.amount) / 1000).toFixed(1)} | <b>Amount: </b> ${itemData.amount}`
+        case "jerrycan":
+            return `<p>${itemData.label}"</p>"
+            <p>A Jerry Can, designed to hold fuel! <br><br>${itemData.info.gasamount} Liters Inside.</p>
+            </span></p><p style=\"padding-top: .8vh;font-size:11px\"><b>Weight: </b>${((itemData.weight * itemData.amount) / 1000).toFixed(1)} | <b>Amount: </b> ${itemData.amount}`
         case "filled_evidence_bag":
             if (itemData.info.type == "casing") {
                 return `<p><strong>Evidence material: </strong><span>${itemData.info.label}</span></p>
