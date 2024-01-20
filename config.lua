@@ -255,7 +255,7 @@ Config.AttachmentCraftingLocation = vector3(88.91, 3743.88, 40.77)
 
 Config.AttachmentCrafting = {
     {
-        name = 'pistol_extendedclip',
+        name = 'clip_attachment',
         amount = 50,
         threshold = 0,
         points = 1,
@@ -266,7 +266,7 @@ Config.AttachmentCrafting = {
         },
     },
     {
-        name = 'pistol_suppressor',
+        name = 'suppressor_attachment',
         amount = 50,
         threshold = 10,
         points = 2,
@@ -277,29 +277,7 @@ Config.AttachmentCrafting = {
         },
     },
     {
-        name = 'smg_extendedclip',
-        amount = 50,
-        threshold = 25,
-        points = 3,
-        costs = {
-            ['metalscrap'] = 190,
-            ['steel'] = 305,
-            ['rubber'] = 85,
-        },
-    },
-    {
-        name = 'microsmg_extendedclip',
-        amount = 50,
-        threshold = 50,
-        points = 4,
-        costs = {
-            ['metalscrap'] = 205,
-            ['steel'] = 340,
-            ['rubber'] = 110,
-        },
-    },
-    {
-        name = 'smg_drum',
+        name = 'drum_attachment',
         amount = 50,
         threshold = 75,
         points = 5,
@@ -310,7 +288,7 @@ Config.AttachmentCrafting = {
         },
     },
     {
-        name = 'smg_scope',
+        name = 'smallscope_attachment',
         amount = 50,
         threshold = 100,
         points = 6,
@@ -318,30 +296,6 @@ Config.AttachmentCrafting = {
             ['metalscrap'] = 255,
             ['steel'] = 390,
             ['rubber'] = 145,
-        },
-    },
-    {
-        name = 'assaultrifle_extendedclip',
-        amount = 50,
-        threshold = 150,
-        points = 7,
-        costs = {
-            ['metalscrap'] = 270,
-            ['steel'] = 435,
-            ['rubber'] = 155,
-            ['smg_extendedclip'] = 1,
-        },
-    },
-    {
-        name = 'assaultrifle_drum',
-        amount = 50,
-        threshold = 200,
-        points = 8,
-        costs = {
-            ['metalscrap'] = 300,
-            ['steel'] = 469,
-            ['rubber'] = 170,
-            ['smg_extendedclip'] = 2,
         },
     },
 }
