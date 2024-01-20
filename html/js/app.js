@@ -362,6 +362,10 @@ function generateDescription(itemData) {
             <p><strong>CSN: </strong><span>${itemData.info.citizenid}</span></p>`;
         case "harness":
             return `<p>${itemData.info.uses} uses left</p>`;
+        case "mechboard":
+            return `<p>${itemData.label}</p>
+            <p>${itemData.info.vehplate}</p>
+            <p>${itemData.info.veh}</p>`;
         case "syphoningkit":
             // cdn-fuel
             return `<p>${itemData.label}</p>
