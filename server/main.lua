@@ -1680,6 +1680,13 @@ RegisterNetEvent('inventory:server:SaveInventory', function(type, id)
 	end
 end)
 
+RegisterNetEvent('inventory:server:ClearStashInventory', function(id)
+	MySQL.insert('INSERT INTO stashitems (stash, items) VALUES (:stash, :items) ON DUPLICATE KEY UPDATE items = :items', {
+		['stash'] = id,
+		['items'] = json.encode({})
+	})
+end)
+
 RegisterNetEvent('inventory:server:UseItemSlot', function(slot)
 	local src = source
 	local itemData = GetItemBySlot(src, slot)
