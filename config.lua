@@ -30,7 +30,7 @@ Config.CraftingObject = `prop_toolchest_05`
 Config.VendingItem = {
     {
         name = 'kurkakola',
-        price = 4,
+        price = 40,
         amount = 50,
         info = {},
         type = 'item',
@@ -38,7 +38,7 @@ Config.VendingItem = {
     },
     {
         name = 'water_bottle',
-        price = 4,
+        price = 40,
         amount = 50,
         info = {},
         type = 'item',
