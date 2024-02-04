@@ -372,7 +372,7 @@ function generateDescription(itemData) {
             <p>A kit used to syphon gasoline from vehicles! <br><br>${itemData.info.gasamount} Liters Inside.</p>
             </span></p><p style=\"padding-top: .8vh;font-size:11px\"><b>Weight: </b>${((itemData.weight * itemData.amount) / 1000).toFixed(1)} | <b>Amount: </b> ${itemData.amount}`
         case "jerrycan":
-            return `<p>${itemData.label}"</p>"
+            return `<p>${itemData.label}</p>
             <p>A Jerry Can, designed to hold fuel! <br><br>${itemData.info.gasamount} Liters Inside.</p>
             </span></p><p style=\"padding-top: .8vh;font-size:11px\"><b>Weight: </b>${((itemData.weight * itemData.amount) / 1000).toFixed(1)} | <b>Amount: </b> ${itemData.amount}`
         case "filled_evidence_bag":
