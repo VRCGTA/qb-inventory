@@ -363,8 +363,7 @@ function generateDescription(itemData) {
         case "harness":
             return `<p>${itemData.info.uses} uses left</p>`;
         case "mechboard":
-            return `<p>${itemData.label}</p>
-            <p>${itemData.info.vehplate}</p>
+            return `<p>${itemData.info.vehplate}</p>
             <p>${itemData.info.veh}</p>`;
         case "syphoningkit":
             // cdn-fuel
