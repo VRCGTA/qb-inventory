@@ -406,6 +406,12 @@ function generateDescription(itemData) {
             return `<p><strong>Card Holder: </strong><span>${itemData.info.name}</span></p>`;
         case "labkey":
             return `<p>Lab: ${itemData.info.lab}</p>`;
+        case "coupon":
+            return "<p>Business: " + itemData.info.business + "</p>"
+        case "business_card":
+            return "<p>Business: " + itemData.info.business + "</p>"
+        case "flyer":
+            return "<p>Business: " + itemData.info.business + "</p>"
         default:
             let itemDescr = itemData.description;
 	    if (itemData.info.costs != undefined && itemData.info.costs != null) itemDescr += `<p><strong>ITEMS NEEDED:</strong> <span>${itemData.info.costs}</span></p>`;
